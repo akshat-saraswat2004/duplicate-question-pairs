@@ -63,3 +63,5 @@ Steps followed in this project:
 ---
 
 ## 📂 Project Structure
+
+Dataset: https://www.kaggle.com/c/quora-question-pairs
