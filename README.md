@@ -1,67 +1,48 @@
 # Duplicate Question Pair Detection (NLP)
 
-This project uses **Natural Language Processing (NLP)** and **Machine Learning** to detect whether two questions have the same meaning (duplicate) or not.
+This project uses Machine Learning and NLP to detect whether two questions have the same meaning.
 
-The model analyzes two questions and predicts if they are semantically similar.
+## Problem Statement
+Many users ask the same question using different wording.  
+This project predicts whether two questions are duplicates.
 
----
-
-## 🚀 Demo
-
-User enters two questions →  
-Model predicts:
-
-Duplicate ✅  
-Not Duplicate ❌
-
----
-
-## 📌 Problem Statement
-
-Platforms like Quora have millions of questions, and many users ask the same question in different wording.  
-This project detects duplicate questions automatically to reduce redundancy and improve search results.
-
----
-
-## 📊 Dataset
-
-Dataset used: **Quora Question Pairs Dataset**
-
-Features in dataset:
-
-- id – question pair id  
-- qid1, qid2 – unique question ids  
-- question1 – first question  
-- question2 – second question  
-- is_duplicate – target label (1 = duplicate, 0 = not duplicate)
-
----
-
-## 🧠 Approach
-
-Steps followed in this project:
-
-1. Data preprocessing
-2. Feature engineering
-3. Text similarity features
-4. Bag of Words (BoW)
-5. Machine Learning model training
-6. Prediction using Streamlit web app
-
----
-
-## 🛠️ Tech Stack
-
+## Tech Stack
 - Python
 - Pandas
-- NumPy
 - Scikit-learn
-- FuzzyWuzzy
 - Streamlit
 - NLP techniques
 
----
+## Project Structure
 
-## 📂 Project Structure
+Duplicate_question_pairs
+│
+app.py
+helper.py
+requirements.txt
+README.md
+│
+data
+train.csv
+│
+models
+model.pkl
+│
+notebooks
+EDA and feature engineering notebooks
 
-Dataset: https://www.kaggle.com/c/quora-question-pairs
+## How to Run
+
+Install dependencies
+
+pip install -r requirements.txt
+
+Run the Streamlit app
+
+streamlit run app.py
+
+## Dataset
+
+Quora Question Pairs Dataset
+
+https://www.kaggle.com/c/quora-question-pairs
