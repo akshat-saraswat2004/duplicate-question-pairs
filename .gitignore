@@ -8,7 +8,7 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Jupyter Notebooks checkpoints
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
 # Environment variables
@@ -17,7 +17,8 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Large Model / ML files
+# Large ML files
+train.csv
 *.pkl
 *.joblib
 *.h5
